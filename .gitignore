@@ -1,0 +1,32 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
+# Expo / React Native
+.expo/
+.expo-shared/
+*.expo.*
+*.expo.js
+
+# iOS
+ios/build/
+ios/Pods/
+ios/*.xcworkspace
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcuserdata/
+ios/DerivedData/
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/app/.cxx/
+android/captures/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
