@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { useAppTheme } from '../hooks/use-app-theme';
 
 interface LogoBoxProps {
@@ -21,7 +22,11 @@ export default function LogoBox({ color, size = 72 }: LogoBoxProps) {
         borderColor: colors.glassBorder,
       },
     ]}>
-      <Text style={[styles.heart, { fontSize: size * 0.47 }]}>♥</Text>
+      <Ionicons
+        name="heart"
+        size={size * 0.44}
+        color="#FFFFFF"
+      />
     </View>
   );
 }
@@ -37,5 +42,4 @@ const styles = StyleSheet.create({
     elevation:      10,
     borderWidth: 1,
   },
-  heart: { color: '#fff' },
 });
